@@ -16,4 +16,7 @@ A very simple, dumb and lightweight project to create polls which can be used in
 
 ## Known limitations
  * Editing polls is only possible in the database.
+
+## Author
+Manuel Reinhard <manu@sprain.ch>
  
