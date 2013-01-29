@@ -4,7 +4,7 @@ A very simple, dumb and lightweight project to create polls which can be used in
  * Creates individual links for each poll option in the following format:<br>
  `http://your-url.com/your-poll-directory/?o=2&s=aSecretHash`
 
- * Let's you create new polls and options in `/backend`.
+ * Let's you view polls and options in `/backend`.
  
 ## Installation
  * Set up a database and import `installation/db.sql`. It's recommended to not upload installation folder to your live server.
@@ -15,8 +15,11 @@ A very simple, dumb and lightweight project to create polls which can be used in
  * Get started!
 
 ## Known limitations
- * Editing polls is only possible in the database.
+ * Creating and editing polls is only possible in the database.
 
 ## Author
-Manuel Reinhard <manu@sprain.ch>
+Manuel Reinhard, <manu@sprain.ch>
+
+## Source
+<https://github.com/sprain/MailPolls>
  
