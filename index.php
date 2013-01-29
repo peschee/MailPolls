@@ -33,7 +33,7 @@ if($hash != $_GET['s']){
 }
 
 //Already voted?
-if(isset($_COOKIE[COOKIES_PREFIX.$hash])){
+if(isset($_COOKIE[COOKIES_PREFIX.md5($optionData['poll_id'])])){
     header('location:'.$optionData['forward_already_voted']);
     exit;
 }
@@ -52,7 +52,7 @@ if(!$mysqli->query($query)){
 }
 
 //Set cookie
-setcookie(COOKIES_PREFIX.$hash, true, time() + (COOKIES_EXPIRATION_IN_DAYS * 24 * 60 * 60));
+setcookie(COOKIES_PREFIX.md5($optionData['poll_id']), true, time() + (COOKIES_EXPIRATION_IN_DAYS * 24 * 60 * 60));
 
 //Forward
 header('location:'.$optionData['forward_success']);
