@@ -15,7 +15,7 @@ function createOptionLink($optionId, $pollId){
         's' => getHash($optionId, $pollId),
     );
 
-    $link = 'http://'.$_SERVER['SERVER_NAME'].'/'. BASE_DIR . http_build_query($params);
+    $link = 'http://'.$_SERVER['SERVER_NAME'].'/'. BASE_DIR . '?'. http_build_query($params);
 
     return $link;
 }
